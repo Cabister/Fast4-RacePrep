@@ -218,12 +218,19 @@ footer{
     padding: 5px;
 
 }
+
+footer .um{
+    text-align: center;
+}
+
+footer .dois{
+    text-align: right;
+}
 .imgf{
     width: 6%;
-    text-align: center;
 }
 .insta{
     width: 2%;
-    text-align: right;
+
 }
 
