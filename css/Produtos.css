@@ -1,0 +1,51 @@
+.produtos{
+    padding: 40px;
+    text-align: center;
+     background-image: linear-gradient(to bottom, rgb(0, 0, 0) 85%, white);
+    color: white;
+    padding: 60px;
+}
+.produtos h2{
+    font-size: 30px;
+}
+.bielaimg{
+    border: 10px solid #ffffff; /* Borda branca ou clara */
+    padding: 5px; /* Espaço entre a borda e a imagem */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Cantos levemente arredondados */
+    background-color: #ffffff; /* Fundo para o padding */
+
+    width: 80%;
+    text-align: right;
+}
+.imgBiela{
+    width: 250px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.432);
+    border-radius: 15px;
+    padding: 20px;
+}
+.Biela {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+a {
+    text-decoration: none; /* tira o sublinhado */
+    color: inherit; /* mantém a cor original do texto */
+}
+.bielatxt{
+width: 250px;
+}
+
+.imgBiela {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.imgBiela:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+

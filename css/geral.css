@@ -1,0 +1,168 @@
+/*Estilização padrao da pagina*/
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, white 70%, black);
+    
+}
+/*Estilização do HEADER da pagina*/
+header{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    margin-top: 300px;
+    padding: 5px;
+
+}
+
+footer .um{
+    text-align: center;
+    clear: right;
+    
+}
+
+footer .dois{
+   text-align: right;
+  margin-right: 50px;
+  width: 20%;
+  float: right;
+  margin-top: -100px;
+
+
+}
+
+.imgf{
+    width: 6%;
+}
+.insta{
+  width: 10%;
+  clear: right;
+
+}
+.instatx{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.instatx:hover{
+    color: purple;
+}
+.divinsta{
+    margin-top: 10px;
+    float: right;
+}
+.email{
+     width: 5%;
+  clear: right;
+}
+footer .tres{
+   text-align: right;
+  margin-right: 50px;
+  width: 20%;
+  float: right;
+  margin-top: -50px;
+  margin-right: 158px;
+}
+.emailtx{
+    color: #ffffff;
+    float: right;
+    font-size: small;
+}
+.divemail{
+    margin-top: -30px;
+    margin-left: 500px;
+}
+
+.logo{
+    
+    width: 8%;
+    margin-left: 5%;
+}
+.banner{
+    width: 100%;
+    height: 400px;
+}
+nav{
+    color:white;
+    position: absolute;
+    top: 10%;
+    font-size: 20;
+    right: 2%;
+    font-family: cursive;
+}
+nav li{
+    display: inline;
+    margin-right: 40px;
+}
+.divHeader{
+    position: relative;
+}
+
+.historia{
+    padding: 40px;
+    text-align: center;
+     background-image: linear-gradient(to bottom, rgb(0, 0, 0) 85%, white);
+    color: white;
+    padding: 60px;
+}
+.historia h2{
+    font-size: 36px;
+}
+.historia p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* efeito da linha animada */
+
+.underline-hover{
+    position: relative;
+}
+
+.underline-hover::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgb(94, 20, 90), rgb(126, 0, 175));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+
+.underline-hover:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.logo{
+    width: 120px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 20px rgb(147, 10, 201);
+}

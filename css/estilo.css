@@ -278,3 +278,76 @@ footer .tres{
     margin-top: -30px;
     margin-left: 500px;
 }
+.produtos{
+    padding: 40px;
+    text-align: center;
+     background-image: linear-gradient(to bottom, rgb(0, 0, 0) 85%, white);
+    color: white;
+    padding: 60px;
+}
+.produtos h2{
+    font-size: 30px;
+}
+.bielaimg{
+    border: 10px solid #ffffff; /* Borda branca ou clara */
+    padding: 5px; /* Espaço entre a borda e a imagem */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Cantos levemente arredondados */
+    background-color: #ffffff; /* Fundo para o padding */
+
+    width: 80%;
+    text-align: right;
+}
+.imgBiela{
+    width: 250px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.432);
+    border-radius: 15px;
+    padding: 20px;
+}
+.Biela {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+a {
+    text-decoration: none; /* tira o sublinhado */
+    color: inherit; /* mantém a cor original do texto */
+}
+.bielatxt{
+width: 250px;
+}
+
+/* Container principal */
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /* quebra linha no celular */
+    margin-top: 40px;
+}
+
+/* Cada imagem + título */
+.item{
+    text-align: center;
+}
+
+/* Imagens */
+.item img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* Efeito ao passar mouse */
+.item img:hover{
+    transform: scale(1.03);
+}
+
+.OFICINA h2{
+    text-align: center;
+}

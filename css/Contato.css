@@ -1,0 +1,65 @@
+/*Titulo*/
+
+.contatos-titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color: blueviolet;
+    font-family: cursive;
+    list-style: none;
+}
+.contatos-item::before{
+    content: "🔧" ;
+}
+.texto-contatos{
+padding-left: 5%;
+}
+
+/*formulario*/
+form{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 70%;
+    margin: 0 0 10px;
+}
+fieldset{
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
+}
+.chk{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background-color: darkmagenta;
+    transform: scale(1.2);
+}
+/*Div de retorno do formulario*/
+.divRetorno{
+    display: none;
+    margin-bottom: 15px;
+}
+.divRetorno p{
+    font-size: 24px;
+}
