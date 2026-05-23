@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Produto</title>
+
+<style>
+body{
+    font-family: Arial;
+    text-align: center;
+    padding: 20px;
+}
+
+img{
+    width: 300px;
+    border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 id="nome"></h1>
+<img id="imagem">
+<p id="descricao"></p>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("nome").innerText = params.get("nomeProduto");
+document.getElementById("imagem").src = params.get("imgProduto");
+document.getElementById("descricao").innerText = params.get("descProduto");
+</script>
+
+</body>
+</html>

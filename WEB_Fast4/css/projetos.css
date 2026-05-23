@@ -1,0 +1,304 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: white;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background-color: black;
+    padding: 20px 8%;
+}
+
+.divHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 120px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+.logo:hover{
+    transform: scale(1.08) rotate(3deg);
+    box-shadow: 0 0 20px rgb(147, 10, 201);
+}
+
+/* MENU */
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+/* linha animada */
+
+.underline-hover::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+
+    background: linear-gradient(to right, purple, rgb(183, 0, 255));
+
+    transform: scaleX(0);
+    transform-origin: right;
+
+    transition: 0.4s;
+}
+
+.underline-hover:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+main{
+    padding: 60px 8%;
+}
+
+/* =========================
+   CARDS DOS PROJETOS
+========================= */
+
+.killer,
+.Thunder,
+.pm28,
+.furieli{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    background: #1b1b1b;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    margin-bottom: 60px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+    transition: 0.4s ease;
+}
+
+/* hover */
+
+.killer:hover,
+.Thunder:hover,
+.pm28:hover,
+.furieli:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* alterna lado da imagem */
+
+.Thunder,
+.furieli{
+    flex-direction: row-reverse;
+}
+
+/* imagens */
+
+.killer img,
+.Thunder img,
+.pm28 img,
+.furieli img{
+    width: 430px;
+    height: 270px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+
+    transition: 0.4s;
+}
+
+.killer img:hover,
+.Thunder img:hover,
+.pm28 img:hover,
+.furieli img:hover{
+    transform: scale(1.03);
+}
+
+/* infos */
+
+.kinfo,
+.thinfo,
+.pminfo,
+.finfo{
+    flex: 1;
+}
+
+/* TITULOS */
+
+.kinfo h2,
+.thinfo h2,
+.pminfo h2,
+.finfo h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* PARAGRAFOS */
+
+.kinfo p,
+.thinfo p,
+.pminfo p,
+.finfo p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #cfcfcf;
+}
+
+/* LISTAS */
+
+.lista1,
+.lista2,
+.lista3,
+.lista4{
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+.lista1 li,
+.lista2 li,
+.lista3 li,
+.lista4 li{
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background: black;
+
+    padding: 40px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.imgf{
+    width: 100px;
+}
+
+.dois,
+.tres{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.insta,
+.email{
+    width: 28px;
+}
+
+.instatx,
+.emailtx{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.instatx:hover{
+    color: rgb(195, 0, 255);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width: 900px){
+
+    .divHeader{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu{
+        gap: 20px;
+    }
+
+    .killer,
+    .Thunder,
+    .pm28,
+    .furieli{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .killer img,
+    .Thunder img,
+    .pm28 img,
+    .furieli img{
+        width: 100%;
+        height: auto;
+    }
+
+    .kinfo h2,
+    .thinfo h2,
+    .pminfo h2,
+    .finfo h2{
+        font-size: 30px;
+    }
+
+    .kinfo p,
+    .thinfo p,
+    .pminfo p,
+    .finfo p{
+        font-size: 16px;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}

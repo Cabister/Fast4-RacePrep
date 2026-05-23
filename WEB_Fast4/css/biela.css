@@ -85,12 +85,15 @@ footer .tres{
 }
 .emailtx{
     color: #ffffff;
-    float: right;
+    text-align: right;
     font-size: small;
+    margin-left: 390px;
+    display: flex;
 }
 .divemail{
     margin-top: -30px;
-    margin-left: 500px;
+    text-align: right;
+    display: flex;
 }
 
 .logo{
@@ -163,4 +166,150 @@ nav li{
 .logo:hover{
     transform: scale(1.1) rotate(5deg);
     box-shadow: 0 0 20px rgb(147, 10, 201);
+}
+
+.fast4-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.fast4-btn {
+  background: transparent;
+  color: #a855ff;
+  border: 2px solid #6a00ff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #6a00ff;
+}
+
+.fast4-btn:hover {
+  background: #6a00ff;
+  color: #fff;
+  box-shadow: 0 0 20px #8a2bff, 0 0 40px #8a2bff;
+}
+
+
+.NomeProdutoGradient {
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #7b1fff, #000000);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* compatibilidade */
+  background-clip: text;
+  color: transparent;
+}
+
+
+.aviso {
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centraliza perfeito */
+
+    background: #6a00ff;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 0 20px #6a00ff;
+
+    transition: opacity 0.5s ease, visibility 0.5s;
+    z-index: 999;
+    text-align: center;
+}
+
+.aviso.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slider{
+    position: relative;
+    width: 500px;
+
+    margin: 40px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides{
+    width: 100%;
+    text-align: center;
+}
+
+.slide{
+    width: 100%;
+    display: none;
+
+    border-radius: 10px;
+}
+
+.slide.ativo{
+    display: block;
+}
+
+.prev,
+.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: rgba(128, 0, 128, 0.8);
+    color: white;
+
+    border: none;
+    width: 45px;
+    height: 45px;
+
+    cursor: pointer;
+
+    font-size: 25px;
+    border-radius: 50%;
+
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev{
+    left: -60px;
+}
+
+.next{
+    right: -60px;
+}
+
+.prev:hover,
+.next:hover{
+    background-color: purple;
+}
+
+.slider1{
+    position: relative;
+    width: 500px;
+
+    margin: 40px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 110px; 
 }

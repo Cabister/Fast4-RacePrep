@@ -18,43 +18,43 @@
     <ul class="menu">
         <li><a href="index.html" class="underline-hover">Home</a></li>
         <li><a href="produtos.html" class="underline-hover">Produtos</a></li>
-        <li><a href="#" class="underline-hover">Contato</a></li>
+        <li><a href="projetos.html" class="underline-hover">Projetos</a></li>
+        <li><a href="Contatos.html" class="underline-hover">Contato</a></li>
     </ul>
              </nav>
             </div>
         </header>
 
+        <div id="aviso" class="aviso">
+            ⚠️ Projeto adicionado!
+        </div>
+
+        <script src="js/aviso.js"></script>
+
         <main>
 
             <section class="TextoProduto"> 
-                <h2>Tampa Tanque de Combustivel ( Fast4 )</h2>
+                <h2 class="NomeProdutoGradient">Tampa Tanque de Combustivel ( Fast4 )</h2>
             </section>
 
             <section>
                 <div class="galeria">
 
-    <!-- Radios -->
-    <input type="radio" name="img" id="img1" checked>
-    <input type="radio" name="img" id="img2">
-    <input type="radio" name="img" id="img3">
+    <section>
+    <div class="slider1">
 
-    <!-- Miniaturas -->
-    <div class="thumbs">
-        <label for="img1">
-            <img src="img/Tampa - instalação.jpeg">
-        </label>
-        <label for="img2">
-            <img src="img/tampa - 2.jpeg">
-        </label>
-        <label for="img3">
-            <img src="img/tampa - principal.jpeg">
-        </label>
-    </div>
+        <button class="prev">&#10094;</button>
 
-    <!-- Imagem principal -->
-    <div class="main-img">
-        <img src="img/tampa - principal.jpeg">
+        <div class="slides">
+            <img src="img/tampa - principal.jpeg" class="slide ativo">
+            <img src="img/tampa - 2.jpeg" class="slide">
+            <img src="img/Tampa - instalação.jpeg" class="slide">
+        </div>
+
+        <button class="next">&#10095;</button>
+
     </div>
+</section>
 
 </div>
 
@@ -63,7 +63,22 @@
             <section>
                 <div class="valorbiela">
                 <p>R$1.000,00</p>
+                <P2>10xR$100,00</P2>
                 </div>
+            </section>
+
+            <section class="Cartoes">
+                <div class="PosiCartao">
+                    <img class="imgCartao" src="img/visa_cartao-removebg-preview.png"/>
+                    <img class="img2cartao" src="img/mastercard-removebg-preview.png"/>
+                    <img class="img3cartao" src="img/logo-pix-icone-1024.png"/>
+                </div>
+
+                <div class="fast4-container">
+                <button class="fast4-btn" onclick="mostrarAviso()">
+                    MONTAR PROJETO
+                </button>
+            </div>
             </section>
 
         </main>
@@ -86,6 +101,6 @@
             </section>
 
         </footer>
-
+<script src="js/slider.js"></script>
 </body>
 </html>

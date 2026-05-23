@@ -318,3 +318,36 @@ a {
 .bielatxt{
 width: 250px;
 }
+
+/* Container principal */
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /* quebra linha no celular */
+    margin-top: 40px;
+}
+
+/* Cada imagem + título */
+.item{
+    text-align: center;
+}
+
+/* Imagens */
+.item img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* Efeito ao passar mouse */
+.item img:hover{
+    transform: scale(1.03);
+}
+
+.OFICINA h2{
+    text-align: center;
+}

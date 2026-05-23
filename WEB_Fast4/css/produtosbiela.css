@@ -40,7 +40,18 @@ width: 250px;
 }
 
 .TextoProduto{
-    margin-left: 800px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #7b1fff, #000000);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* compatibilidade */
+  background-clip: text;
+  color: transparent;
 }
 
 .imgbielaprodutos{
@@ -60,7 +71,17 @@ width: 250px;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    margin-right: 130px;
 }
+
+.produto-foto{
+    display: flex;
+    text-align: center;
+    margin-left: 130px;
+    width: 500px;
+    height: 500px;
+}
+
 
 /* esconder radios */
 .galeria input {
@@ -69,6 +90,7 @@ width: 250px;
 
 /* miniaturas */
 .thumbs {
+    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -105,10 +127,126 @@ width: 250px;
 }
 
 .valorbiela{
-    margin-left: 950px;
+    text-align: center;
 }
 
 .valorbiela p {
     font-size: 25px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #7b1fff, #000000);
   
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* compatibilidade */
+  background-clip: text;
+  color: transparent;
 }
+
+.valorbiela p2{
+    font-size: 15px;
+    font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #7b1fff, #000000);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* compatibilidade */
+  background-clip: text;
+  color: transparent;
+}
+
+.PosiCartao {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+}
+
+.imgCartao {
+    width: 35px;
+    }
+
+.img2cartao    {
+    width: 35px;
+} 
+
+.img3cartao {
+    width: 25px;
+    margin-bottom: 5px;
+}
+
+.fast4-container {
+  display: flex ;
+  justify-content: center;
+    margin-top: 50px;    
+}
+
+<!--adcionar no carrinho>
+
+.fast4-btn {
+  background: transparent;
+  color: #a855ff;
+  border: 2px solid #6a00ff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #6a00ff;
+}
+
+.fast4-btn:hover {
+  background: #6a00ff;
+  color: #fff;
+  box-shadow: 0 0 20px #8a2bff, 0 0 40px #8a2bff;
+}
+
+
+.NomeProdutoGradient {
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #7b1fff, #000000);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* compatibilidade */
+  background-clip: text;
+  color: transparent;
+}
+
+
+.aviso {
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centraliza perfeito */
+
+    background: #6a00ff;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 0 20px #6a00ff;
+
+    transition: opacity 0.5s ease, visibility 0.5s;
+    z-index: 999;
+    text-align: center;
+}
+
+.aviso.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
+
